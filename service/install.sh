@@ -34,10 +34,10 @@ WantedBy=multi-user.target
 EOF
 
 if [ $? -ne 0 ]; then
-  echo "サービスファイルの作成に失敗しました。"
+  echo "サービスファイルの作成に失敗しました。 $tmp_file"
   exit 1
 fi
-echo "サービスファイルを作成しました。"
+echo "サービスファイルを作成しました。 $tmp_file"
 
 # サービスファイル移動
 sudo mv $tmp_file $service_dir/$service_file
