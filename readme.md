@@ -16,5 +16,6 @@ sudo systemctl start python-service-sample.service
 ## サービス削除
 
 ```shell
+chmod u+x ./service/uninstall.sh
 sudo ./service/uninstall.sh
 ```
